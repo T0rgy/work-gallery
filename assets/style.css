@@ -65,12 +65,27 @@ header nav ul li a:hover {
 }
 
 /* HERO START */
+.hero {
+    display: flex;
+}
+
 .hero img {
+    display: flex;
     height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+section .profile-pic {
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 /* ARTICLE "ABOUT ME"" START */
@@ -180,4 +195,24 @@ footer address {
 
 footer address a {
     color: var(--color2);
+}
+
+/* MEADIA QUERY*/
+@media screen and (max-width: 980px) {
+  footer h3 {
+      font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    footer h3 {
+        font-size: 25px;
+    }
+  
+}
+
+@media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 25px;
+    }
 }
