@@ -191,6 +191,7 @@ footer h3 {
 footer address {
     line-height: 1.5;
     text-align: right;
+    font-size: 30px;
 }
 
 footer address a {
@@ -202,11 +203,19 @@ footer address a {
   footer h3 {
       font-size: 40px;
   }
+  
+  footer address {
+      font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
     footer h3 {
         font-size: 25px;
+    }
+    
+    footer address {
+        font-size: 15px;
     }
   
 }
