@@ -1,1 +1,127 @@
+:root {
+    --color1: #94e8b4;
+    --color2: #72bda3;
+    --color3: #5e8c61;
+    --color4: #4e6151;
+    --color5: #3b322c;
+}
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER AND NAV START */
+
+header {
+    padding: 20px;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+header nav {
+    margin: 7px, 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px, 15px;
+    font-size: 2.55vw;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(59, 50, 44, 1);
+}
+
+header nav ul li a:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+    border: 15px;
+    text-shadow: none;
+}
+
+/* HERO START */
+.hero img {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* ARTICLE "ABOUT ME"" START */
+
+.about-me {
+    display: inline-block;
+    margin: 20px 50px;
+    align-content: center;
+
+}
+
+.about-me h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(59, 50, 44, 1);
+    margin: 20px;
+}
+
+/* MAIN "WORK EXAMPLES" START */
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+/* FOOTER START */
+footer {
+    background: var(--color4);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h3 {
+    color: var(--color2);
+    font-size: 50px;
+    margin: 0;
+    font-style: italic;
+}
+
+footer address {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer address a {
+    color: var(--color2);
+}
