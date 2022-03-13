@@ -82,7 +82,7 @@ header nav ul li a:hover {
 
 }
 
-.about-me h2 {
+.section-title {
     text-align: center;
     text-decoration: underline;
     text-shadow: 0 0 10px rgba(59, 50, 44, 1);
@@ -90,12 +90,68 @@ header nav ul li a:hover {
 }
 
 /* MAIN "WORK EXAMPLES" START */
-#work {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+    background-color: var(--color5);
+    border-style: dashed;
+    border-color: var(--color3);
+}
+
+
+.gallery-box1 {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 6px solid var(--color1);
+    background: var(--color3);
+    margin: 5px;
+    width: 1100px;
+    height: 500px;
+    position: relative;
+}
+
+.gallery-box1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 6px solid var(--color1);
+    background: var(--color3);
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.gallery-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box h3, .gallery-box1 h3 {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color4);
+    border-radius: 15px;
+    color: black;
+}
+
+.gallery-box h3:hover, .gallery-box1 h3:hover {
+    background-color: var(--color1);
+
 }
 
 
